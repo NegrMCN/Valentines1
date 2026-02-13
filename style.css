@@ -81,7 +81,7 @@ button.btn {
 /* No Button */
 .no-btn {
     background: #c24848;
-    color: white;
+    color: rgb(216, 31, 31);
     position: absolute;           
     top: 0;
     left: 200px;                  
@@ -159,3 +159,4 @@ button.btn {
         width: 200px;
     }
 }
+
