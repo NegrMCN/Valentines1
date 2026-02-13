@@ -34,8 +34,22 @@ noBtn.addEventListener("click", function() {
     noBtn.style.left = x + "px";
     noBtn.style.top = y + "px";
 });
+        
+const heartContainer = document.querySelector('.heart-container');
 
+// Generate 50 hearts
+for (let i = 0; i < 200; i++) {
+    const heart = document.createElement('div');
+    heart.classList.add('heart');
+    heart.textContent = '💖';
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.fontSize = (10 + Math.random() * 30) + 'px';
+    heart.style.animationDuration = (5 + Math.random() * 10) + 's';
+    heart.style.animationDelay = Math.random() * 10 + 's';
+    heartContainer.appendChild(heart);
+}
 </script>
 
 </body>
 </html>
+
