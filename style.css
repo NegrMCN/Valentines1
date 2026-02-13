@@ -1,0 +1,125 @@
+body {
+    text-align: center;
+    font-family: Arial;
+    background-color: #fce4ec;
+}
+
+/* Global styles */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #fce4ec;
+}
+
+/* H1 with Valentine font */
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    color: #d32f2f;   /* romantic red */
+    margin-bottom: 40px;
+}
+
+/* Love box */
+.love-box {
+    background: red;
+    width: 300px;
+    padding: 20px;
+    border-radius: 25px;
+    margin: 20px auto;
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* Gallery images */
+.gallery img {
+    width: 250px;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+
+.container {
+    margin-top: 150px;
+}
+
+.buttons {
+    position: relative;
+    width: 400px;
+    height: 60px;
+    margin: 0 auto; /* center container */
+}
+
+.btn {
+    background: #2e7d32;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+.yes-btn {
+            background: #2e7d32;
+            color: white;
+            position: relative; /* stays in flow */
+            left: -70px;
+}
+
+#noBtn {
+            background: #d32f2f;
+            color: white;
+            position: absolute; /* start absolute */
+            left: 200px;             /* start to the right of Yes button */
+            top: 0;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+.gallery img {
+    width: 250px;
+    border-radius: 15px;
+    margin: 15px;
+}
+.love-box {
+    background: rgb(202, 173, 200);
+    width: 300px;              /* visible width */
+    padding: 20px;              /* space inside the box for text */
+    border-radius: 25px;        /* rounded corners */
+    margin: 20px auto;          /* center horizontally */
+    color: white;               /* text color */
+    font-size: 16px;            /* readable text */
+    line-height: 1.5;           /* spacing between lines */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* optional shadow for depth */
+    text-align: center;         /* center text inside */
+}
+
+.love-box p {
+    font-family: 'Roboto', sans-serif; /* custom font for paragraph */
+    font-size: 16px;
+    line-height: 1.6;
+    color: white;  /* keeps contrast with red box */
+}
+
+.memory-container {
+    display: flex;                  
+    align-items: center;            
+    justify-content: center;        
+    gap: 10px;                     /* spacing between box and images */
+    margin: 50px auto;             /* center container on page */
+    max-width: 1000px;              /* prevent stretching too wide */
+    padding: 0 20px;               /* space from edges of screen */
+    box-sizing: border-box;
+}
+
+.memory-container img {
+    width: 300px;                   /* size of images */
+    border-radius: 15px;
+}
+
+
+
+
