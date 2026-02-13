@@ -120,6 +120,45 @@ h1 {
     border-radius: 15px;
 }
 
+body {
+    position: relative;
+    overflow-x: hidden; /* prevent horizontal scroll from hearts */
+}
+
+/* Heart 1 */
+body::before {
+    content: "💖💖💖💖";
+    position: absolute;
+    top: -50px;
+    left: 0;
+    font-size: 30px;
+    color: rgba(255, 0, 100, 0.15); /* subtle transparency */
+    animation: floatHearts 12s linear infinite;
+}
+
+/* Heart 2 */
+body::after {
+    content: "💕💕💕";
+    position: absolute;
+    top: -30px;
+    left: 200px;
+    font-size: 25px;
+    color: rgba(255, 0, 100, 0.12);
+    animation: floatHearts 15s linear infinite reverse;
+}
+
+/* Keyframes for floating */
+@keyframes floatHearts {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    50% {
+        transform: translateY(200px) translateX(50px);
+    }
+    100% {
+        transform: translateY(400px) translateX(0);
+    }
+}
 
 
 
